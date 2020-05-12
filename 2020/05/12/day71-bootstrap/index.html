@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, HX&amp;LT Blog">
+    <meta name="keywords" content="Day71(bootstrap), HX&amp;LT Blog">
     <meta name="description" content="努力才能有收获,汗水浇灌出成功!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | HX&amp;LT Blog</title>
+    <title>Day71(bootstrap) | HX&amp;LT Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Day71(bootstrap)</h1>
                 </div>
             </div>
         </div>
@@ -428,12 +428,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/bootstrap/">
+                                <span class="chip bg-color">bootstrap</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/javaweb/" class="post-category">
+                                javaweb
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -451,7 +464,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    75
+                    1.2k
                 </div>
                 
 
@@ -463,16 +476,154 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h3 id="23-工具提示"><a href="#23-工具提示" class="headerlink" title="23.工具提示"></a>23.工具提示</h3><pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot; /&gt;
+    &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--
+        对于工具提示， data-toggle=&quot;tooltip&quot;
+        title: 提示框中的信息。
+        data-placement： 控制提示框出现的方向。
+     --&gt;
+    &lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; title=&quot;hello world&quot; data-placement=&quot;right&quot;&gt;按钮&lt;/button&gt;
 
+    &lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; title=&quot;提示&quot; data-content=&quot;这是一个提示信息&quot;&gt;按钮&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;script&gt;
+    // 处于对bootstrap性能的原因，这两个功能是选择性接入的(bootstrap没有强制性将这两个功能初始化)，
+    // 所以我们要使用的时候必须要初始化。
+    $(&#39;button[data-toggle=&quot;tooltip&quot;]&#39;).tooltip();  //
+
+    $(&#39;button[data-toggle=&quot;popover&quot;]&#39;).popover();  //
+&lt;/script&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="24-警告框"><a href="#24-警告框" class="headerlink" title="24.警告框"></a>24.警告框</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot; /&gt;
+    &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--
+        可以实现警告框的手动关闭。
+     --&gt;
+    &lt;div class=&quot;alert alert-danger&quot;&gt;
+        这是一个警告框
+        &lt;button class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;
+            &lt;span&gt;&amp;times;&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><h3 id="25-按钮的状态"><a href="#25-按钮的状态" class="headerlink" title="25.按钮的状态"></a>25.按钮的状态</h3><pre><code>&lt;body&gt;
+    &lt;!-- data-loading-text当按钮不可点的时候显示文字。 --&gt;
+    &lt;button id=&quot;btn&quot; class=&quot;btn btn-primary&quot; data-loading-text=&quot;提交中...&quot; &gt;提交&lt;/button&gt;
+
+&lt;!--    &lt;input type=&quot;checkbox&quot; id=&quot;interests&quot;&gt; --&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    /**  效果和下面是一样的
+    $(&#39;#btn&#39;).click(function() {})
+     */
+    /**  */
+    $(&#39;#btn&#39;).on(&#39;click&#39;, function() {
+        // button(&#39;loading&#39;) 表示按钮处于加载的过程中, loading是固定值
+        $(&#39;#btn&#39;).button(&#39;loading&#39;);
+
+        setTimeout(function() {
+            // 让按钮恢复原始的状态, reset是固定
+            $(&#39;#btn&#39;).button(&#39;reset&#39;);
+        }, 2000);
+    })
+
+    /**
+    $(&#39;#interests&#39;).on(&#39;change&#39;, function() {
+
+    });
+     */
+
+&lt;/script&gt;
+&lt;/html&gt;</code></pre><h3 id="26-折叠框"><a href="#26-折叠框" class="headerlink" title="26.折叠框"></a>26.折叠框</h3><pre><code>&lt;body&gt;
+    &lt;!--
+        控制折叠, 可以使用a和button标签。如果是a标签用 href; 如果是button是data-target，
+        但是两种方式都必须加上 data-toggle=&quot;collapse&quot;
+     --&gt;
+    &lt;a class=&quot;btn btn-danger&quot; href=&quot;#exampleCollapse&quot; data-toggle=&quot;collapse&quot;&gt;折叠&lt;/a&gt;
+
+    &lt;button class=&quot;btn btn-danger&quot; data-target=&quot;#exampleCollapse&quot; data-toggle=&quot;collapse&quot;&gt;折叠&lt;/button&gt;
+
+
+    &lt;div class=&quot;collapse&quot; id=&quot;exampleCollapse&quot;&gt;
+        这是一个折叠信息
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre><h3 id="27-轮播图"><a href="#27-轮播图" class="headerlink" title="27.轮播图"></a>27.轮播图</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.css&quot; /&gt;
+    &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;style&gt;
+        .control-icon {
+            position: absolute;
+            top: 50%;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;div id=&quot;carousel-example&quot; style=&quot;margin: 0 auto; width: 590px; height: 470px;&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+        &lt;!-- 小圆点 --&gt;
+        &lt;ol class=&quot;carousel-indicators&quot;&gt;
+            &lt;li data-target=&quot;#carousel-example&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+            &lt;li data-target=&quot;#carousel-example&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+            &lt;li data-target=&quot;#carousel-example&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;!-- 放置图片 --&gt;
+        &lt;div class=&quot;carousel-inner&quot;&gt;
+
+            &lt;!-- 展示每张图片以及文字 --&gt;
+            &lt;div class=&quot;item active&quot;&gt;
+                &lt;img width=&quot;590px&quot; height=&quot;470px&quot; src=&quot;images/image1.jpg&quot;&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;item&quot;&gt;
+                &lt;img width=&quot;590px&quot; height=&quot;470px&quot; src=&quot;images/image2.jpg&quot;&gt;
+                &lt;div class=&quot;carousel-caption&quot;&gt;
+                    &lt;h3&gt;图片的描述信息&lt;/h3&gt;
+                    &lt;p&gt;展示每张图片以及文字 展示每张图片以及文字 展示每张图片 &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;item&quot;&gt;
+                &lt;img width=&quot;590px&quot; height=&quot;470px&quot; src=&quot;images/image3.jpg&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- 左边的箭头 --&gt;
+        &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-example&quot; data-slide=&quot;prev&quot;&gt;
+            &lt;span class=&quot;fa fa-chevron-left control-icon&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;!-- 右边的箭头 --&gt;
+        &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-example&quot; data-slide=&quot;next&quot;&gt;
+            &lt;span class=&quot;fa fa-chevron-right control-icon&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
             </div>
             <hr/>
 
@@ -487,7 +638,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Han Xian</a>
+                    <a href="/about" rel="external nofollow noreferrer">韩贤</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -497,7 +648,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hxltforever.github.io/2020/05/12/hello-world/">https://hxltforever.github.io/2020/05/12/hello-world/</a>
+                    <a href="https://hxltforever.github.io/2020/05/12/day71-bootstrap/">https://hxltforever.github.io/2020/05/12/day71-bootstrap/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -510,7 +661,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Han Xian</a>
+                    <a href="/about" target="_blank">韩贤</a>
                     !
                 </span>
             </div>
@@ -534,7 +685,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/bootstrap/">
+                                    <span class="chip bg-color">bootstrap</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -700,9 +855,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/05/12/day71-bootstrap/">
                     <div class="card-image">
@@ -724,9 +880,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -739,6 +895,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -754,7 +911,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/05/12/hello-world/">
@@ -784,7 +941,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
